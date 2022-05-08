@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Poppins:ital,wght@1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --mainColor: #bf64f4;
+    --hoverColor: #9749c4;
+    --backgroundColor: #f8f1fc;
+    --darkOne: #362f3a;
+    --darkTwo: #48424b;
+    --lightOne: #919191;
+    --lightTwo: #aaa;
+}
+
+*,*::before,*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+img{
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+body{
+    background: var(--backgroundColor);
+}
+.bigcontainer{
+    padding: 1.7rem 0 2rem;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.container{
+    position: relative;
+    max-width: 100rem;
+    width:100%;
+    margin: 0 auto;
+    padding: 0 3rem;
+    z-index: 10;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background: var(--backgroundColor);
+    top: -3px;
+    padding-top: 2rem;
+}
+div.logo{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+div.logo img{
+    width: 40px;
+    margin-right: 0.6rem;
+    margin-top: -0.6rem;
+}
+
+.logo h3{
+    color: var(--darkTwo);
+    font-size: 1.55rem;
+    line-height: 1.2;
+    font-weight: 700; 
+}
+
+.links ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+div.links a{
+    color: var(--darkTwo);
+    margin-left: 4.5rem;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+div .links a :hover{
+    color: var(--hoverColor);
+    transform: scale(1.05);
+}
+.wallpaper{
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+div .showcase-area{
+    position: relative;
+    z-index: 5;
+    top: -1100px;
+}
+
+div .showcase-area .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+}
+div .bigtitle{
+    font-size: 1.4rem;
+    color:  var(--darkOne);
+    text-transform: capitalize;
+    line-height: 1.4;
+}
+.bigtitle h1{
+    color: var(--darkOne);
+    font-size: 5rem;
+}
+
+.text{
+    color: var(--);
+    font-size: 1.1rem;
+    margin:1.9rem 0 2.5rem;
+    max-width: 600px;
+    line-height: 2.3;
+}
+
+.person{
+    width: 123%;
+    transform: translate(15%, 25px)
+}
+.left{
+    position: relative;
+    display: inline-block;
+    z-index: 999;
+}
+.about{
+    box-sizing: border-box;
+    box-shadow: 10px;
+    position: relative;
+    align-items: center;
+    z-index: 5;
+    top: -1300px;
+    margin: 5px 50px;
+    background: #e0cbfc;
+    padding: 10px 20px;
+}
+.about .content{
+    display: flex;
+}
+.about img{
+    object-fit: contain;
+    height: 300px;
+}
+.timeline{
+    position: relative;
+    z-index: 5;
+    margin: 90px auto;
+    width: 360px;
+    border-left: 2px solid #cccccc;
+    padding: 0 20px 0 30px;
+    top: -1300px;
+}
+div .timeline-details{
+    background-color: #e0cbfc;
+    padding: 10px 25px;
+    font-size: 16px;
+    border: 1px solid #cccccc;
+    line-height: 1.7;
+    position: relative;
+    height: 110px;
+    margin-bottom: 20px;
+}
+div .timeline-details::before{
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #000000;
+    border: 3px solid #dddddd;
+    position: absolute;
+    top: 10px;
+    left: -40px;
+}
+div .timeline-details::after{
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: transparent #dddddd transparent transparent;
+    border-width: 8px;
+    position: absolute;
+    left: -17px;
+    top: 10px;
+}
+footer{
+    position: relative;
+    z-index: 5;
+    top: -1300px;
+    background-color: #efe3fe;
+}
+footer h1{
+    text-align: center;
+}
+.contact-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.message{
+    position: relative;
+    z-index: 5;
+    left: 150px;
+    box-sizing: border-box;
+    margin-left: 100px;
+    background-color: #ffffff;
+    width: 360px;
+    height: 450px;
+    align-items: center;
+    text-align: center;
+    padding-top: 50px;
+}
+div .contacts{
+    position: relative;
+    z-index: 5;
+    right: 400px;
+}
