@@ -223,7 +223,14 @@ footer h1{
     height: 450px;
     align-items: center;
     text-align: center;
-    padding-top: 50px;
+    padding-top: 30px;
+}
+.message form{
+    padding: 20px;
+}
+
+.message form input{
+    width: 250px;
 }
 div .contacts{
     position: relative;
